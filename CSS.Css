@@ -1,0 +1,91 @@
+/* Base styles for all screens */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .form-container {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        margin: 10px;
+    }
+}
+
+/* Flexible Units */
+body {
+    font-size: 16px;
+}
+
+.form-container {
+    max-width: 40em;
+    margin: 2em auto;
+}
+
+/* Fluid Grid Layout */
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Flexible Images */
+img {
+    max-width: 100%;
+    height: auto;
+}

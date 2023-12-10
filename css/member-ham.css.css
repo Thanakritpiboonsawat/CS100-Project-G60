@@ -19,6 +19,7 @@ body {
 
 html {
   font-family: "Lucida Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -102,9 +103,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 10px solid #ffffff;
-  border-radius: 15px;
-  overflow: hidden;
 }
 
 .image-container img {
@@ -112,6 +110,10 @@ html {
   height: 50%;
   margin-left: auto;
   margin-right: auto;
+  border: 10px solid #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+
 }
 
 

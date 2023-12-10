@@ -103,6 +103,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2bbb04e09b6545a782ae6b11511949db0365202c
 }
 
 .image-container img {
@@ -113,7 +117,10 @@ html {
   border: 10px solid #ffffff;
   border-radius: 15px;
   overflow: hidden;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2bbb04e09b6545a782ae6b11511949db0365202c
 }
 
 

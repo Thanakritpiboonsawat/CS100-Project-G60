@@ -196,21 +196,39 @@
       </div>
 
       <!-- Submit Button -->
-      <div class="form-group">
-        <input type="submit" value="Submit" />
-      </div>
-   
+      <!--<div class="form-group">
+        <input type="submit" value="Submit" onclick="return voidinputjs(); document.getElementById('myForm').style.display='none'"/>
+      </div> -->
 
-  <div class="resetbutton">
-  <input type="reset"  onreset="handleReset()">                        <!-- ปุ่ม reset form -->
-  <script>
-    function handleReset() {
-        alert("Form has been reset!");
-        // Additional actions can be performed here
-    }
-  </script>
-  </div>
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button onclick="return validation();">SUBMIT</button>
+      </div>
+
+      
+  
+      <div class="resetbutton">
+        <input type="reset"  onreset="handleReset()">                        <!-- ปุ่ม reset form -->
+        <script>
+          function handleReset() {
+              alert("Form has been reset!");
+              // Additional actions can be performed here
+          }
+        </script>
+        </div>
   </form>
+  </div>
+      
+  </div>
+  <div id="displaySection" style="display: none;">
+    <h2>Submitted Data</h2>
+    <pre id="displayData"></pre>
+  </div>
+
+
+  <div id="submitdate" hidden>
+    <div class="showresult" id="showresult"></div>
+    <div id="showimg"></div>
   </div>
 
 

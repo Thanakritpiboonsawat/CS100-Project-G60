@@ -191,7 +191,11 @@ function validateStudentID() {
   document.getElementById("studentID").addEventListener("input", validateStudentID);
   document.getElementById("email").addEventListener("input", validateEmail);
 
-
+  document.addEventListener("DOMContentLoaded", async () => {
+    const activityTypes = await fetchActivityTypes();
+    populateActivityTypes(activityTypes);
+  });
+  
 
 
 
